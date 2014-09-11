@@ -1,0 +1,8 @@
+prefix=/home/jared/marsupial/client/devel
+
+Name: kobuki_rapps
+Description: Description of kobuki_rapps
+Version: 0.6.4
+Cflags: 
+Libs: -L/home/jared/marsupial/client/devel/lib 
+Requires: 

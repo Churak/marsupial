@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/teleop_turtle_joy.dir/src/teleop_turtle_joy.cpp.o  -o /home/jared/marsupial/client/devel/lib/learning_joy/teleop_turtle_joy -rdynamic 

@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "kobuki_capabilities")
+set(kobuki_capabilities_MAINTAINER "Marcus Liebhardt <marcus.liebhardt@yujinrobot.com>")
+set(kobuki_capabilities_DEPRECATED "")
+set(kobuki_capabilities_VERSION "0.6.4")
+set(kobuki_capabilities_BUILD_DEPENDS )
+set(kobuki_capabilities_RUN_DEPENDS "kobuki_node" "nodelet" "rocon_app_manager" "rocon_apps" "std_capabilities")
+set(kobuki_capabilities_BUILDTOOL_DEPENDS "catkin")

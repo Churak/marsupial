@@ -1,0 +1,8 @@
+prefix=/home/jared/marsupial/client/install
+
+Name: kobuki_capabilities
+Description: Description of kobuki_capabilities
+Version: 0.6.4
+Cflags: 
+Libs: -L/home/jared/marsupial/client/install/lib 
+Requires: 
