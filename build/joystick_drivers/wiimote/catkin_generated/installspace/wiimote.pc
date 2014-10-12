@@ -1,0 +1,8 @@
+prefix=/home/marsupial/marsupial/install
+
+Name: wiimote
+Description: Description of wiimote
+Version: 1.10.0
+Cflags: -I/home/marsupial/marsupial/install/include
+Libs: -L/home/marsupial/marsupial/install/lib 
+Requires: geometry_msgs sensor_msgs std_msgs std_srvs rospy roslib genmsg
