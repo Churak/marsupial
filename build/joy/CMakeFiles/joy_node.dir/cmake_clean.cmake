@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/joy_node.dir/src/joy_node.cpp.o"
-  "/home/marsupial/marsupial/devel/lib/joy/joy_node.pdb"
-  "/home/marsupial/marsupial/devel/lib/joy/joy_node"
+  "/home/jared/marsupial/devel/lib/joy/joy_node.pdb"
+  "/home/jared/marsupial/devel/lib/joy/joy_node"
 )
 
 # Per-language clean rules from dependency scanning.

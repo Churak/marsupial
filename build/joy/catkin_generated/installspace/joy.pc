@@ -1,8 +1,8 @@
-prefix=/home/marsupial/marsupial/install
+prefix=/home/jared/marsupial/install
 
 Name: joy
 Description: Description of joy
 Version: 1.10.0
 Cflags: 
-Libs: -L/home/marsupial/marsupial/install/lib 
+Libs: -L/home/jared/marsupial/install/lib 
 Requires: roscpp diagnostic_updater sensor_msgs

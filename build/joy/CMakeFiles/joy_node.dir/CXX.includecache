@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/marsupial/marsupial/src/joy/src/joy_node.cpp
+/home/jared/marsupial/src/joy/src/joy_node.cpp
 unistd.h
 -
 math.h
@@ -18,7 +18,7 @@ fcntl.h
 diagnostic_updater/diagnostic_updater.h
 -
 ros/ros.h
-/home/marsupial/marsupial/src/joy/src/ros/ros.h
+/home/jared/marsupial/src/joy/src/ros/ros.h
 sensor_msgs/Joy.h
 -
 

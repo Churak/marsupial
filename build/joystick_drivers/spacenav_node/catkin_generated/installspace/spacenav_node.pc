@@ -1,8 +1,0 @@
-prefix=/home/marsupial/marsupial/install
-
-Name: spacenav_node
-Description: Description of spacenav_node
-Version: 1.10.0
-Cflags: 
-Libs: -L/home/marsupial/marsupial/install/lib 
-Requires: roscpp geometry_msgs sensor_msgs

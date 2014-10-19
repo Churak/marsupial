@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/marsupial/marsupial/src
+CMAKE_SOURCE_DIR = /home/jared/marsupial/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/marsupial/marsupial/build
+CMAKE_BINARY_DIR = /home/jared/marsupial/build
 
 # Include any dependencies generated for this target.
 include joy/CMakeFiles/joy_node.dir/depend.make
@@ -50,18 +50,18 @@ include joy/CMakeFiles/joy_node.dir/progress.make
 include joy/CMakeFiles/joy_node.dir/flags.make
 
 joy/CMakeFiles/joy_node.dir/src/joy_node.cpp.o: joy/CMakeFiles/joy_node.dir/flags.make
-joy/CMakeFiles/joy_node.dir/src/joy_node.cpp.o: /home/marsupial/marsupial/src/joy/src/joy_node.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/marsupial/marsupial/build/CMakeFiles $(CMAKE_PROGRESS_1)
+joy/CMakeFiles/joy_node.dir/src/joy_node.cpp.o: /home/jared/marsupial/src/joy/src/joy_node.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jared/marsupial/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object joy/CMakeFiles/joy_node.dir/src/joy_node.cpp.o"
-	cd /home/marsupial/marsupial/build/joy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/joy_node.dir/src/joy_node.cpp.o -c /home/marsupial/marsupial/src/joy/src/joy_node.cpp
+	cd /home/jared/marsupial/build/joy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/joy_node.dir/src/joy_node.cpp.o -c /home/jared/marsupial/src/joy/src/joy_node.cpp
 
 joy/CMakeFiles/joy_node.dir/src/joy_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/joy_node.dir/src/joy_node.cpp.i"
-	cd /home/marsupial/marsupial/build/joy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/marsupial/marsupial/src/joy/src/joy_node.cpp > CMakeFiles/joy_node.dir/src/joy_node.cpp.i
+	cd /home/jared/marsupial/build/joy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jared/marsupial/src/joy/src/joy_node.cpp > CMakeFiles/joy_node.dir/src/joy_node.cpp.i
 
 joy/CMakeFiles/joy_node.dir/src/joy_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/joy_node.dir/src/joy_node.cpp.s"
-	cd /home/marsupial/marsupial/build/joy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/marsupial/marsupial/src/joy/src/joy_node.cpp -o CMakeFiles/joy_node.dir/src/joy_node.cpp.s
+	cd /home/jared/marsupial/build/joy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jared/marsupial/src/joy/src/joy_node.cpp -o CMakeFiles/joy_node.dir/src/joy_node.cpp.s
 
 joy/CMakeFiles/joy_node.dir/src/joy_node.cpp.o.requires:
 .PHONY : joy/CMakeFiles/joy_node.dir/src/joy_node.cpp.o.requires
@@ -79,41 +79,41 @@ joy_node_OBJECTS = \
 # External object files for target joy_node
 joy_node_EXTERNAL_OBJECTS =
 
-/home/marsupial/marsupial/devel/lib/joy/joy_node: joy/CMakeFiles/joy_node.dir/src/joy_node.cpp.o
-/home/marsupial/marsupial/devel/lib/joy/joy_node: joy/CMakeFiles/joy_node.dir/build.make
-/home/marsupial/marsupial/devel/lib/joy/joy_node: /opt/ros/indigo/lib/libroscpp.so
-/home/marsupial/marsupial/devel/lib/joy/joy_node: /usr/lib/i386-linux-gnu/libboost_signals.so
-/home/marsupial/marsupial/devel/lib/joy/joy_node: /usr/lib/i386-linux-gnu/libboost_filesystem.so
-/home/marsupial/marsupial/devel/lib/joy/joy_node: /opt/ros/indigo/lib/librosconsole.so
-/home/marsupial/marsupial/devel/lib/joy/joy_node: /opt/ros/indigo/lib/librosconsole_log4cxx.so
-/home/marsupial/marsupial/devel/lib/joy/joy_node: /opt/ros/indigo/lib/librosconsole_backend_interface.so
-/home/marsupial/marsupial/devel/lib/joy/joy_node: /usr/lib/liblog4cxx.so
-/home/marsupial/marsupial/devel/lib/joy/joy_node: /usr/lib/i386-linux-gnu/libboost_regex.so
-/home/marsupial/marsupial/devel/lib/joy/joy_node: /opt/ros/indigo/lib/libxmlrpcpp.so
-/home/marsupial/marsupial/devel/lib/joy/joy_node: /opt/ros/indigo/lib/libroscpp_serialization.so
-/home/marsupial/marsupial/devel/lib/joy/joy_node: /opt/ros/indigo/lib/librostime.so
-/home/marsupial/marsupial/devel/lib/joy/joy_node: /usr/lib/i386-linux-gnu/libboost_date_time.so
-/home/marsupial/marsupial/devel/lib/joy/joy_node: /opt/ros/indigo/lib/libcpp_common.so
-/home/marsupial/marsupial/devel/lib/joy/joy_node: /usr/lib/i386-linux-gnu/libboost_system.so
-/home/marsupial/marsupial/devel/lib/joy/joy_node: /usr/lib/i386-linux-gnu/libboost_thread.so
-/home/marsupial/marsupial/devel/lib/joy/joy_node: /usr/lib/i386-linux-gnu/libpthread.so
-/home/marsupial/marsupial/devel/lib/joy/joy_node: /usr/lib/i386-linux-gnu/libconsole_bridge.so
-/home/marsupial/marsupial/devel/lib/joy/joy_node: joy/CMakeFiles/joy_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable /home/marsupial/marsupial/devel/lib/joy/joy_node"
-	cd /home/marsupial/marsupial/build/joy && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/joy_node.dir/link.txt --verbose=$(VERBOSE)
+/home/jared/marsupial/devel/lib/joy/joy_node: joy/CMakeFiles/joy_node.dir/src/joy_node.cpp.o
+/home/jared/marsupial/devel/lib/joy/joy_node: joy/CMakeFiles/joy_node.dir/build.make
+/home/jared/marsupial/devel/lib/joy/joy_node: /opt/ros/indigo/lib/libroscpp.so
+/home/jared/marsupial/devel/lib/joy/joy_node: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/jared/marsupial/devel/lib/joy/joy_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/jared/marsupial/devel/lib/joy/joy_node: /opt/ros/indigo/lib/librosconsole.so
+/home/jared/marsupial/devel/lib/joy/joy_node: /opt/ros/indigo/lib/librosconsole_log4cxx.so
+/home/jared/marsupial/devel/lib/joy/joy_node: /opt/ros/indigo/lib/librosconsole_backend_interface.so
+/home/jared/marsupial/devel/lib/joy/joy_node: /usr/lib/liblog4cxx.so
+/home/jared/marsupial/devel/lib/joy/joy_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/jared/marsupial/devel/lib/joy/joy_node: /opt/ros/indigo/lib/libxmlrpcpp.so
+/home/jared/marsupial/devel/lib/joy/joy_node: /opt/ros/indigo/lib/libroscpp_serialization.so
+/home/jared/marsupial/devel/lib/joy/joy_node: /opt/ros/indigo/lib/librostime.so
+/home/jared/marsupial/devel/lib/joy/joy_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/jared/marsupial/devel/lib/joy/joy_node: /opt/ros/indigo/lib/libcpp_common.so
+/home/jared/marsupial/devel/lib/joy/joy_node: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/jared/marsupial/devel/lib/joy/joy_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/jared/marsupial/devel/lib/joy/joy_node: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/jared/marsupial/devel/lib/joy/joy_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/jared/marsupial/devel/lib/joy/joy_node: joy/CMakeFiles/joy_node.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable /home/jared/marsupial/devel/lib/joy/joy_node"
+	cd /home/jared/marsupial/build/joy && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/joy_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-joy/CMakeFiles/joy_node.dir/build: /home/marsupial/marsupial/devel/lib/joy/joy_node
+joy/CMakeFiles/joy_node.dir/build: /home/jared/marsupial/devel/lib/joy/joy_node
 .PHONY : joy/CMakeFiles/joy_node.dir/build
 
 joy/CMakeFiles/joy_node.dir/requires: joy/CMakeFiles/joy_node.dir/src/joy_node.cpp.o.requires
 .PHONY : joy/CMakeFiles/joy_node.dir/requires
 
 joy/CMakeFiles/joy_node.dir/clean:
-	cd /home/marsupial/marsupial/build/joy && $(CMAKE_COMMAND) -P CMakeFiles/joy_node.dir/cmake_clean.cmake
+	cd /home/jared/marsupial/build/joy && $(CMAKE_COMMAND) -P CMakeFiles/joy_node.dir/cmake_clean.cmake
 .PHONY : joy/CMakeFiles/joy_node.dir/clean
 
 joy/CMakeFiles/joy_node.dir/depend:
-	cd /home/marsupial/marsupial/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marsupial/marsupial/src /home/marsupial/marsupial/src/joy /home/marsupial/marsupial/build /home/marsupial/marsupial/build/joy /home/marsupial/marsupial/build/joy/CMakeFiles/joy_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jared/marsupial/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jared/marsupial/src /home/jared/marsupial/src/joy /home/jared/marsupial/build /home/jared/marsupial/build/joy /home/jared/marsupial/build/joy/CMakeFiles/joy_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : joy/CMakeFiles/joy_node.dir/depend
 

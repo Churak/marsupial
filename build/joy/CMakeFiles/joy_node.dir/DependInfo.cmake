@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/marsupial/marsupial/src/joy/src/joy_node.cpp" "/home/marsupial/marsupial/build/joy/CMakeFiles/joy_node.dir/src/joy_node.cpp.o"
+  "/home/jared/marsupial/src/joy/src/joy_node.cpp" "/home/jared/marsupial/build/joy/CMakeFiles/joy_node.dir/src/joy_node.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -21,7 +21,7 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
-  "/home/marsupial/marsupial/src/joy/msg/cpp"
+  "/home/jared/marsupial/src/joy/msg/cpp"
   "/opt/ros/indigo/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

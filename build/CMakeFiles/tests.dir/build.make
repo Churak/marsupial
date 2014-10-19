@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/marsupial/marsupial/src
+CMAKE_SOURCE_DIR = /home/jared/marsupial/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/marsupial/marsupial/build
+CMAKE_BINARY_DIR = /home/jared/marsupial/build
 
 # Utility rule file for tests.
 
@@ -60,6 +60,6 @@ CMakeFiles/tests.dir/clean:
 .PHONY : CMakeFiles/tests.dir/clean
 
 CMakeFiles/tests.dir/depend:
-	cd /home/marsupial/marsupial/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marsupial/marsupial/src /home/marsupial/marsupial/src /home/marsupial/marsupial/build /home/marsupial/marsupial/build /home/marsupial/marsupial/build/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jared/marsupial/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jared/marsupial/src /home/jared/marsupial/src /home/jared/marsupial/build /home/jared/marsupial/build /home/jared/marsupial/build/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tests.dir/depend
 
