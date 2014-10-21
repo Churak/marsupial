@@ -1,0 +1,8 @@
+prefix=/home/jared/marsupial/devel
+
+Name: joyControl
+Description: Description of joyControl
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/jared/marsupial/devel/lib 
+Requires: 
