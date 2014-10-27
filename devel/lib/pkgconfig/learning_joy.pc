@@ -1,0 +1,8 @@
+prefix=/home/jared/marsupial/devel
+
+Name: learning_joy
+Description: Description of learning_joy
+Version: 0.0.0
+Cflags: -I/home/jared/marsupial/src/learning_joy/include
+Libs: -L/home/jared/marsupial/devel/lib 
+Requires: 

@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "joy_control")
+set(joy_control_MAINTAINER "jared <jared@todo.todo>")
+set(joy_control_DEPRECATED "")
+set(joy_control_VERSION "0.0.0")
+set(joy_control_BUILD_DEPENDS "joy" "roscpp" "roscpp" "visualization_msgs")
+set(joy_control_RUN_DEPENDS "joy" "roscpp" "visualization_msgs")
+set(joy_control_BUILDTOOL_DEPENDS "catkin")

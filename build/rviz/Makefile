@@ -318,48 +318,6 @@ nav_msgs_generate_messages_py/fast:
 .PHONY : nav_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-rviz/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule:
-	cd /home/jared/marsupial/build && $(MAKE) -f CMakeFiles/Makefile2 rviz/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
-.PHONY : rviz/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_cpp: rviz/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
-.PHONY : std_srvs_generate_messages_cpp
-
-# fast build rule for target.
-std_srvs_generate_messages_cpp/fast:
-	cd /home/jared/marsupial/build && $(MAKE) -f rviz/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make rviz/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
-.PHONY : std_srvs_generate_messages_cpp/fast
-
-# Convenience name for target.
-rviz/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule:
-	cd /home/jared/marsupial/build && $(MAKE) -f CMakeFiles/Makefile2 rviz/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
-.PHONY : rviz/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_lisp: rviz/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
-.PHONY : std_srvs_generate_messages_lisp
-
-# fast build rule for target.
-std_srvs_generate_messages_lisp/fast:
-	cd /home/jared/marsupial/build && $(MAKE) -f rviz/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make rviz/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
-.PHONY : std_srvs_generate_messages_lisp/fast
-
-# Convenience name for target.
-rviz/CMakeFiles/std_srvs_generate_messages_py.dir/rule:
-	cd /home/jared/marsupial/build && $(MAKE) -f CMakeFiles/Makefile2 rviz/CMakeFiles/std_srvs_generate_messages_py.dir/rule
-.PHONY : rviz/CMakeFiles/std_srvs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_py: rviz/CMakeFiles/std_srvs_generate_messages_py.dir/rule
-.PHONY : std_srvs_generate_messages_py
-
-# fast build rule for target.
-std_srvs_generate_messages_py/fast:
-	cd /home/jared/marsupial/build && $(MAKE) -f rviz/CMakeFiles/std_srvs_generate_messages_py.dir/build.make rviz/CMakeFiles/std_srvs_generate_messages_py.dir/build
-.PHONY : std_srvs_generate_messages_py/fast
-
-# Convenience name for target.
 rviz/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule:
 	cd /home/jared/marsupial/build && $(MAKE) -f CMakeFiles/Makefile2 rviz/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
 .PHONY : rviz/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
@@ -485,48 +443,6 @@ topic_tools_generate_messages_py/fast:
 	cd /home/jared/marsupial/build && $(MAKE) -f rviz/CMakeFiles/topic_tools_generate_messages_py.dir/build.make rviz/CMakeFiles/topic_tools_generate_messages_py.dir/build
 .PHONY : topic_tools_generate_messages_py/fast
 
-# Convenience name for target.
-rviz/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule:
-	cd /home/jared/marsupial/build && $(MAKE) -f CMakeFiles/Makefile2 rviz/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
-.PHONY : rviz/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-visualization_msgs_generate_messages_cpp: rviz/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
-.PHONY : visualization_msgs_generate_messages_cpp
-
-# fast build rule for target.
-visualization_msgs_generate_messages_cpp/fast:
-	cd /home/jared/marsupial/build && $(MAKE) -f rviz/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make rviz/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build
-.PHONY : visualization_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-rviz/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule:
-	cd /home/jared/marsupial/build && $(MAKE) -f CMakeFiles/Makefile2 rviz/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
-.PHONY : rviz/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-visualization_msgs_generate_messages_lisp: rviz/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
-.PHONY : visualization_msgs_generate_messages_lisp
-
-# fast build rule for target.
-visualization_msgs_generate_messages_lisp/fast:
-	cd /home/jared/marsupial/build && $(MAKE) -f rviz/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make rviz/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
-.PHONY : visualization_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-rviz/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule:
-	cd /home/jared/marsupial/build && $(MAKE) -f CMakeFiles/Makefile2 rviz/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
-.PHONY : rviz/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-visualization_msgs_generate_messages_py: rviz/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
-.PHONY : visualization_msgs_generate_messages_py
-
-# fast build rule for target.
-visualization_msgs_generate_messages_py/fast:
-	cd /home/jared/marsupial/build && $(MAKE) -f rviz/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make rviz/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
-.PHONY : visualization_msgs_generate_messages_py/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -551,9 +467,6 @@ help:
 	@echo "... nav_msgs_generate_messages_lisp"
 	@echo "... nav_msgs_generate_messages_py"
 	@echo "... rebuild_cache"
-	@echo "... std_srvs_generate_messages_cpp"
-	@echo "... std_srvs_generate_messages_lisp"
-	@echo "... std_srvs_generate_messages_py"
 	@echo "... test"
 	@echo "... tf2_msgs_generate_messages_cpp"
 	@echo "... tf2_msgs_generate_messages_lisp"
@@ -564,9 +477,6 @@ help:
 	@echo "... topic_tools_generate_messages_cpp"
 	@echo "... topic_tools_generate_messages_lisp"
 	@echo "... topic_tools_generate_messages_py"
-	@echo "... visualization_msgs_generate_messages_cpp"
-	@echo "... visualization_msgs_generate_messages_lisp"
-	@echo "... visualization_msgs_generate_messages_py"
 .PHONY : help
 
 
