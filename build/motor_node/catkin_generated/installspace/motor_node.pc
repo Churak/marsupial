@@ -1,0 +1,8 @@
+prefix=/home/marsupial/marsupial/install
+
+Name: motor_node
+Description: Description of motor_node
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/marsupial/marsupial/install/lib 
+Requires: 

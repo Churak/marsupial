@@ -255,6 +255,116 @@ clean: gtest/CMakeFiles/gtest_main.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory motor_node
+
+# Convenience name for "all" pass in the directory.
+motor_node/all:
+.PHONY : motor_node/all
+
+# Convenience name for "clean" pass in the directory.
+motor_node/clean: motor_node/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+motor_node/clean: motor_node/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+motor_node/clean: motor_node/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : motor_node/clean
+
+# Convenience name for "preinstall" pass in the directory.
+motor_node/preinstall:
+.PHONY : motor_node/preinstall
+
+#=============================================================================
+# Target rules for target motor_node/CMakeFiles/std_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+motor_node/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f motor_node/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make motor_node/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f motor_node/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make motor_node/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/marsupial/marsupial/build/CMakeFiles 
+	@echo "Built target std_msgs_generate_messages_cpp"
+.PHONY : motor_node/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+motor_node/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marsupial/marsupial/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 motor_node/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marsupial/marsupial/build/CMakeFiles 0
+.PHONY : motor_node/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_cpp: motor_node/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+.PHONY : std_msgs_generate_messages_cpp
+
+# clean rule for target.
+motor_node/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f motor_node/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make motor_node/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+.PHONY : motor_node/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: motor_node/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target motor_node/CMakeFiles/std_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+motor_node/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f motor_node/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make motor_node/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f motor_node/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make motor_node/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/marsupial/marsupial/build/CMakeFiles 
+	@echo "Built target std_msgs_generate_messages_lisp"
+.PHONY : motor_node/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+motor_node/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marsupial/marsupial/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 motor_node/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marsupial/marsupial/build/CMakeFiles 0
+.PHONY : motor_node/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_lisp: motor_node/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+.PHONY : std_msgs_generate_messages_lisp
+
+# clean rule for target.
+motor_node/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f motor_node/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make motor_node/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+.PHONY : motor_node/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: motor_node/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target motor_node/CMakeFiles/std_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+motor_node/CMakeFiles/std_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f motor_node/CMakeFiles/std_msgs_generate_messages_py.dir/build.make motor_node/CMakeFiles/std_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f motor_node/CMakeFiles/std_msgs_generate_messages_py.dir/build.make motor_node/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/marsupial/marsupial/build/CMakeFiles 
+	@echo "Built target std_msgs_generate_messages_py"
+.PHONY : motor_node/CMakeFiles/std_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+motor_node/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marsupial/marsupial/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 motor_node/CMakeFiles/std_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marsupial/marsupial/build/CMakeFiles 0
+.PHONY : motor_node/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_py: motor_node/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+.PHONY : std_msgs_generate_messages_py
+
+# clean rule for target.
+motor_node/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f motor_node/CMakeFiles/std_msgs_generate_messages_py.dir/build.make motor_node/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : motor_node/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: motor_node/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory gscam
 
 # Convenience name for "all" pass in the directory.
@@ -285,9 +395,6 @@ gscam/clean: gscam/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 gscam/clean: gscam/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
 gscam/clean: gscam/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
 gscam/clean: gscam/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
-gscam/clean: gscam/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-gscam/clean: gscam/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-gscam/clean: gscam/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 .PHONY : gscam/clean
 
 # Convenience name for "preinstall" pass in the directory.
@@ -955,99 +1062,6 @@ gscam/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean:
 
 # clean rule for target.
 clean: gscam/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target gscam/CMakeFiles/std_msgs_generate_messages_cpp.dir
-
-# All Build rule for target.
-gscam/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f gscam/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make gscam/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f gscam/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make gscam/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/marsupial/marsupial/build/CMakeFiles 
-	@echo "Built target std_msgs_generate_messages_cpp"
-.PHONY : gscam/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-gscam/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marsupial/marsupial/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 gscam/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marsupial/marsupial/build/CMakeFiles 0
-.PHONY : gscam/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: gscam/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : std_msgs_generate_messages_cpp
-
-# clean rule for target.
-gscam/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f gscam/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make gscam/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-.PHONY : gscam/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-
-# clean rule for target.
-clean: gscam/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target gscam/CMakeFiles/std_msgs_generate_messages_lisp.dir
-
-# All Build rule for target.
-gscam/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f gscam/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make gscam/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f gscam/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make gscam/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/marsupial/marsupial/build/CMakeFiles 
-	@echo "Built target std_msgs_generate_messages_lisp"
-.PHONY : gscam/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-
-# Build rule for subdir invocation for target.
-gscam/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marsupial/marsupial/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 gscam/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marsupial/marsupial/build/CMakeFiles 0
-.PHONY : gscam/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: gscam/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : std_msgs_generate_messages_lisp
-
-# clean rule for target.
-gscam/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f gscam/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make gscam/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-.PHONY : gscam/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-
-# clean rule for target.
-clean: gscam/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target gscam/CMakeFiles/std_msgs_generate_messages_py.dir
-
-# All Build rule for target.
-gscam/CMakeFiles/std_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f gscam/CMakeFiles/std_msgs_generate_messages_py.dir/build.make gscam/CMakeFiles/std_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f gscam/CMakeFiles/std_msgs_generate_messages_py.dir/build.make gscam/CMakeFiles/std_msgs_generate_messages_py.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/marsupial/marsupial/build/CMakeFiles 
-	@echo "Built target std_msgs_generate_messages_py"
-.PHONY : gscam/CMakeFiles/std_msgs_generate_messages_py.dir/all
-
-# Build rule for subdir invocation for target.
-gscam/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marsupial/marsupial/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 gscam/CMakeFiles/std_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marsupial/marsupial/build/CMakeFiles 0
-.PHONY : gscam/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_py: gscam/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : std_msgs_generate_messages_py
-
-# clean rule for target.
-gscam/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f gscam/CMakeFiles/std_msgs_generate_messages_py.dir/build.make gscam/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-.PHONY : gscam/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-
-# clean rule for target.
-clean: gscam/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================

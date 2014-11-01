@@ -443,48 +443,6 @@ sensor_msgs_generate_messages_py/fast:
 	cd /home/marsupial/marsupial/build && $(MAKE) -f gscam/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make gscam/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
 
-# Convenience name for target.
-gscam/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/marsupial/marsupial/build && $(MAKE) -f CMakeFiles/Makefile2 gscam/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : gscam/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: gscam/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	cd /home/marsupial/marsupial/build && $(MAKE) -f gscam/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make gscam/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-gscam/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/marsupial/marsupial/build && $(MAKE) -f CMakeFiles/Makefile2 gscam/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : gscam/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: gscam/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /home/marsupial/marsupial/build && $(MAKE) -f gscam/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make gscam/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-gscam/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/marsupial/marsupial/build && $(MAKE) -f CMakeFiles/Makefile2 gscam/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : gscam/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_py: gscam/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : std_msgs_generate_messages_py
-
-# fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	cd /home/marsupial/marsupial/build && $(MAKE) -f gscam/CMakeFiles/std_msgs_generate_messages_py.dir/build.make gscam/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
-
 src/gscam.o: src/gscam.cpp.o
 .PHONY : src/gscam.o
 
@@ -590,9 +548,6 @@ help:
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_py"
-	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_py"
 	@echo "... test"
 	@echo "... src/gscam.o"
 	@echo "... src/gscam.i"

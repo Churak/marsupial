@@ -28,7 +28,7 @@
 /home/marsupial/marsupial/build/gscam/CMakeFiles/sensor_msgs_generate_messages_cpp.dir
 /home/marsupial/marsupial/build/gscam/CMakeFiles/sensor_msgs_generate_messages_lisp.dir
 /home/marsupial/marsupial/build/gscam/CMakeFiles/sensor_msgs_generate_messages_py.dir
-/home/marsupial/marsupial/build/gscam/CMakeFiles/std_msgs_generate_messages_cpp.dir
-/home/marsupial/marsupial/build/gscam/CMakeFiles/std_msgs_generate_messages_lisp.dir
-/home/marsupial/marsupial/build/gscam/CMakeFiles/std_msgs_generate_messages_py.dir
+/home/marsupial/marsupial/build/motor_node/CMakeFiles/std_msgs_generate_messages_cpp.dir
+/home/marsupial/marsupial/build/motor_node/CMakeFiles/std_msgs_generate_messages_lisp.dir
+/home/marsupial/marsupial/build/motor_node/CMakeFiles/std_msgs_generate_messages_py.dir
 /home/marsupial/marsupial/build/CMakeFiles/tests.dir

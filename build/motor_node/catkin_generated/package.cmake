@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "motor_node")
+set(motor_node_MAINTAINER "marsupial <marsupial@todo.todo>")
+set(motor_node_DEPRECATED "")
+set(motor_node_VERSION "0.0.0")
+set(motor_node_BUILD_DEPENDS "rospy" "std_msgs")
+set(motor_node_RUN_DEPENDS "rospy" "std_msgs")
+set(motor_node_BUILDTOOL_DEPENDS "catkin")
