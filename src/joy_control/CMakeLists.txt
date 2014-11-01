@@ -8,6 +8,8 @@ find_package(catkin REQUIRED COMPONENTS
   joy
   roscpp
   visualization_msgs
+  std_msgs
+  genmsg
 )
 
 catkin_package(

@@ -1,6 +1,7 @@
 #include <ros/ros.h>
 #include <geometry_msgs/Twist.h>
 #include <sensor_msgs/Joy.h>
+#include <std_msgs/Float32.h>
 #include <visualization_msgs/Marker.h>
 
 
@@ -83,6 +84,8 @@ ros::NodeHandle n;
 ros::Rate r(100);
 ros::Publisher vel_1_mark_pub = n.advertise<visualization_msgs::Marker>("velocity_1",0);
 ros::Publisher vel_2_mark_pub = n.advertise<visualization_msgs::Marker>("velocity_2",0);
+ros::Publisher vel_1_pub = n.advertise<std_msgs::Float32>("vel_1_float",0);
+ros::Publisher vel_2_pub = n.advertise<std_msgs::Float32>("vel_2_float",0);
 
 // Define the  and create the marker, called "marker"
 visualization_msgs::Marker vel_1_mark;
@@ -152,19 +155,27 @@ vel_2_mark.lifetime = ros::Duration();
 // Publish the first instance of the marker
 vel_1_mark_pub.publish(vel_1_mark);
 vel_2_mark_pub.publish(vel_2_mark);
-
 // ********************************************************************
 
 
 // Main loop of the node
-vel_1 = 2;
-vel_2 = 3;
+vel_1 = 0;
+vel_2 = 0;
+
+std_msgs::Float32 vel_1_float;
+std_msgs::Float32 vel_2_float;
+
 
     while (ros::ok())
     {
       vel_1_mark.scale.x = vel_1;
       vel_2_mark.scale.x = vel_2;
 
+      vel_1_float.data = vel_1;
+      vel_2_float.data = vel_2;
+
+      vel_1_pub.publish(vel_1_float);
+      vel_2_pub.publish(vel_2_float);
       vel_1_mark_pub.publish(vel_1_mark);
       vel_2_mark_pub.publish(vel_2_mark);
 

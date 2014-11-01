@@ -13,6 +13,8 @@ geometry_msgs/Twist.h
 -
 sensor_msgs/Joy.h
 -
+std_msgs/Float32.h
+-
 visualization_msgs/Marker.h
 -
 
@@ -763,6 +765,22 @@ std_msgs/Header.h
 -
 
 /opt/ros/indigo/include/std_msgs/ColorRGBA.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
+/opt/ros/indigo/include/std_msgs/Float32.h
 string
 -
 vector

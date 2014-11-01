@@ -149,9 +149,9 @@ clean: CMakeFiles/run_tests.dir/clean
 # Target rules for target CMakeFiles/tests.dir
 
 # All Build rule for target.
+CMakeFiles/tests.dir/all: rviz/src/test/CMakeFiles/send_lots_of_points.dir/all
 CMakeFiles/tests.dir/all: rviz/src/test/CMakeFiles/marker_test.dir/all
 CMakeFiles/tests.dir/all: rviz/src/test/CMakeFiles/mesh_marker_test.dir/all
-CMakeFiles/tests.dir/all: rviz/src/test/CMakeFiles/send_lots_of_points.dir/all
 CMakeFiles/tests.dir/all: rviz/src/test/CMakeFiles/send_images.dir/all
 CMakeFiles/tests.dir/all: rviz/src/test/CMakeFiles/send_point_cloud_2.dir/all
 CMakeFiles/tests.dir/all: rviz/src/test/CMakeFiles/send_grid_cells.dir/all

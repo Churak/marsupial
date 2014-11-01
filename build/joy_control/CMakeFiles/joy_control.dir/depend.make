@@ -65,6 +65,7 @@ joy_control/CMakeFiles/joy_control.dir/src/joy_control.cpp.o: /opt/ros/indigo/in
 joy_control/CMakeFiles/joy_control.dir/src/joy_control.cpp.o: /opt/ros/indigo/include/rosconsole/macros_generated.h
 joy_control/CMakeFiles/joy_control.dir/src/joy_control.cpp.o: /opt/ros/indigo/include/sensor_msgs/Joy.h
 joy_control/CMakeFiles/joy_control.dir/src/joy_control.cpp.o: /opt/ros/indigo/include/std_msgs/ColorRGBA.h
+joy_control/CMakeFiles/joy_control.dir/src/joy_control.cpp.o: /opt/ros/indigo/include/std_msgs/Float32.h
 joy_control/CMakeFiles/joy_control.dir/src/joy_control.cpp.o: /opt/ros/indigo/include/std_msgs/Header.h
 joy_control/CMakeFiles/joy_control.dir/src/joy_control.cpp.o: /opt/ros/indigo/include/visualization_msgs/Marker.h
 
