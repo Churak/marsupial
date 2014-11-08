@@ -375,6 +375,12 @@ ps3joy_BINARY_DIR:STATIC=/home/marsupial/marsupial/build/joystick_drivers/ps3joy
 //Value Computed by CMake
 ps3joy_SOURCE_DIR:STATIC=/home/marsupial/marsupial/src/joystick_drivers/ps3joy
 
+//Value Computed by CMake
+puckdropper_BINARY_DIR:STATIC=/home/marsupial/marsupial/build/puckdropper
+
+//Value Computed by CMake
+puckdropper_SOURCE_DIR:STATIC=/home/marsupial/marsupial/src/puckdropper
+
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/indigo/share/rosconsole/cmake
 
@@ -531,7 +537,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=5
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -126,6 +126,7 @@ IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/home/marsupial/marsupial/build/gtest/cmake_install.cmake")
   INCLUDE("/home/marsupial/marsupial/build/motor_node/cmake_install.cmake")
+  INCLUDE("/home/marsupial/marsupial/build/puckdropper/cmake_install.cmake")
   INCLUDE("/home/marsupial/marsupial/build/gscam/cmake_install.cmake")
   INCLUDE("/home/marsupial/marsupial/build/joy/cmake_install.cmake")
 

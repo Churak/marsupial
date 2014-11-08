@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "puckdropper")
+set(puckdropper_MAINTAINER "marsupial <marsupial@todo.todo>")
+set(puckdropper_DEPRECATED "")
+set(puckdropper_VERSION "0.0.1")
+set(puckdropper_BUILD_DEPENDS "roscpp" "std_msgs")
+set(puckdropper_RUN_DEPENDS "roscpp" "std_msgs")
+set(puckdropper_BUILDTOOL_DEPENDS "catkin")

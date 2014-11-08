@@ -30,7 +30,7 @@ motor_com_1 = serial.Serial(
 	bytesize=serial.EIGHTBITS
 )
 
-motor_com_2 = serial.Serial)
+motor_com_2 = serial.Serial(
 	port='/dev/ttyS1',
 	baudrate=115200,
 	parity=serial.PARITY_NONE,
@@ -44,7 +44,7 @@ motor_com_2 = serial.Serial)
 #motor_com_1.open()
 if motor_com_1.isOpen()==True:
 	
-#	print 'COM0 is open!'
+	print 'COM0 is open!'
 
 	#Gain write-access to motor controllers
 
@@ -56,23 +56,17 @@ if motor_com_1.isOpen()==True:
 
 	motor_com_1.write(enable_bridge)
 
-#	print 'Bridge Enabled!'
+	print 'Bridge Enabled!'
 
 #	motor_com_1.write(gofast)
-else:
-#	print 'error opening COM0 port'
 
 if motor_com_2.isOpen()==True:
 
-#	print 'COM1 is open!'
+	print 'COM1 is open!'
 
 	motor_com_2.write(gain_access)
 	
 	motor_com_2.write(enable_bridge)
-
-else:
-#	print 'error opening COM1 port'
-
 
 def motormath(vscale):
 	
@@ -80,11 +74,13 @@ def motormath(vscale):
 	mc_conv = (rpm_val * count_rev) / 60.0
 	raw_vel = mc_conv * (6.5536)
 	mc_final = int(raw_vel)
+	print "motor math stuck"
 	return mc_final
 
-def checksum_calc(velocity)
+def checksum_calc(velocity):
 
-	cksum = print(crc16.crc16xmodem(velocity))
+	cksum = crc16.crc16xmodem(velocity)
+	print "checksum stuck"
 	return(cksum)
 
 def callbackmotor1(data):
@@ -94,11 +90,12 @@ def callbackmotor1(data):
 	# Transform vel 1 to little endien respresentation
 	vel_1_endien = struct.pack('<i', "%08X" % vel_1)
 
+	data_wordcount = floor(len(vel_1_endien.lstrip("0"))/2) #fill in here
+
 	# This is where the velcity data will be parsed. The number of words will be parsed out of it
 	# 	#bytes = odd -> l = (#bytes - 1)/2
 	#	#bytes = even -> l = #bytes/2
 	
-	data_wordcount = #fill in here
 	command_header = vel_mode + data_wordcount
 
 	chk_sum_header = checksum_calc(command_header)
@@ -107,6 +104,10 @@ def callbackmotor1(data):
 	motor_1_final = command_header + str(ck_sum_header) + str(vel_1_endien) + str(chk_sum_data)
 
 	motor_com_1.write(motor_1_final)
+
+	print "pickles!"
+
+	print motor_1_final
 	
 def callbackmotor2(data):
    
@@ -119,7 +120,7 @@ def callbackmotor2(data):
 	# 	#bytes = odd -> l = (#bytes - 1)/2
 	#	#bytes = even -> l = #bytes/2
 	
-	data_wordcount = #fill in here
+	data_wordcount = floor(len(vel_2_endien.lstrip("0"))/2) #fill in here
 	command_header = vel_mode + data_wordcount
 
 	chk_sum_header = checksum_calc(command_header)
@@ -129,22 +130,26 @@ def callbackmotor2(data):
 
 	motor_com_2.write(motor_2_final)
 
+	print motor_2_final
+
 def motor():
 
 	sub1 = rospy.Subscriber("vel_1_float", Float32, callbackmotor1)
 	sub2 = rospy.Subscriber("vel_2_float", Float32, callbackmotor2)
 
+	print "Pickles wolf 2"
+
 if __name__ == '__main__':
 
 	rospy.init_node('motor_control', anonymous=True)
-	r = rospy.Rate(10)
+	#r = rospy.Rate(10)
 	motor()
 
 	try:
-	
+		print "try"	
 		while not rospy.is_shutdown():
-			
+			print "try, try again"	
 			rospy.spin()
-			r.sleep()
+			#r.sleep()
 
 	except rospy.ROSInterruptException: pass

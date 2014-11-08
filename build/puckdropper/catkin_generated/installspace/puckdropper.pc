@@ -1,0 +1,8 @@
+prefix=/home/marsupial/marsupial/install
+
+Name: puckdropper
+Description: Description of puckdropper
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/marsupial/marsupial/install/lib 
+Requires: 
