@@ -10,8 +10,9 @@ import math
 import binascii
 import serial
 import struct
-#import crc16
+import crc16
 from std_msgs.msg import Float32
+
 
 motor_max = 2000.0
 count_rev = 16384.0
@@ -74,12 +75,11 @@ def motormath(vscale):
 	mc_conv = (rpm_val * count_rev) / 60.0
 	raw_vel = mc_conv * (6.5536)
 	mc_final = int(raw_vel)
-	print "motor math stuck"
 	return mc_final
 
 def checksum_calc(velocity):
 
-	cksum = crc16.crc16xmodem(velocity)
+	cksum = crc16.crc16xmodem(str(velocity))
 	print "checksum stuck"
 	return(cksum)
 
@@ -88,56 +88,62 @@ def callbackmotor1(data):
 	vel_1 = motormath(data.data)
 
 	# Transform vel 1 to little endien respresentation
-	vel_1_endien = struct.pack('<i', "%08X" % vel_1)
+	vel_1_endien = vel_1 
 
-	data_wordcount = floor(len(vel_1_endien.lstrip("0"))/2) #fill in here
+	data_wordcount = math.floor(len(str(vel_1_endien))/2) #fill in here
 
 	# This is where the velcity data will be parsed. The number of words will be parsed out of it
 	# 	#bytes = odd -> l = (#bytes - 1)/2
 	#	#bytes = even -> l = #bytes/2
 	
-	command_header = vel_mode + data_wordcount
+	command_header = vel_mode + str(data_wordcount)
 
+	apples = ":".join("{:02x}".format(ord(c)) for c in command_header)
+	
 	chk_sum_header = checksum_calc(command_header)
 	chk_sum_data = checksum_calc(vel_1_endien)
 
-	motor_1_final = command_header + str(ck_sum_header) + str(vel_1_endien) + str(chk_sum_data)
+	motor_1_final = command_header + str(chk_sum_header) + str(vel_1_endien) + str(chk_sum_data)
 
-	motor_com_1.write(motor_1_final)
+	#motor_com_1.write(motor_1_final)
 
-	print "pickles!"
+	#print "pickles!"
+	
+	apples = ":".join("{:02x}".format(ord(c)) for c in str(chk_sum_data))
 
-	print motor_1_final
+	print apples
+
 	
 def callbackmotor2(data):
    
 	vel_2 = motormath(data.data)
 
 	# Transform vel 1 to little endien respresentation
-	vel_2_endien = struct.pack('<i', "%08X" % vel_2)
+	
+	#vel_2_endien = struct.pack('<i', hex(vel_2))
+	vel_2_endien = vel_2
 
 	# This is where the velcity data will be parsed. The number of words will be parsed out of it
 	# 	#bytes = odd -> l = (#bytes - 1)/2
 	#	#bytes = even -> l = #bytes/2
 	
-	data_wordcount = floor(len(vel_2_endien.lstrip("0"))/2) #fill in here
-	command_header = vel_mode + data_wordcount
+	data_wordcount = math.floor(len(str(vel_2_endien))/2) #fill in here
+	#command_header = vel_mode + data_wordcount
 
-	chk_sum_header = checksum_calc(command_header)
-	chk_sum_data = checksum_calc(vel_2_endien)
+	#chk_sum_header = checksum_calc(command_header)
+	#chk_sum_data = checksum_calc(vel_2_endien)
 
-	motor_2_final = command_header + str(chk_sum_header) + str(vel_2_endien) + str(chk_sum_data)
+	#motor_2_final = command_header + str(chk_sum_header) + str(vel_2_endien) + str(chk_sum_data)
 
-	motor_com_2.write(motor_2_final)
+	#motor_com_2.write(motor_2_final)
 
-	print motor_2_final
+	#print data_wordcount
 
 def motor():
 
 	sub1 = rospy.Subscriber("vel_1_float", Float32, callbackmotor1)
 	sub2 = rospy.Subscriber("vel_2_float", Float32, callbackmotor2)
 
-	print "Pickles wolf 2"
 
 if __name__ == '__main__':
 
