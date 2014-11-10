@@ -86,24 +86,51 @@ def callbackmotor1(data):
 
 	vel_1_hex_int = int(vel_1_hex,16)
 
-	# Represents te number in little endian notation
+	# Converts the velocity hex value into the little endien format and puts it into the
+	# proper hex format and gets the CRC value
 	vel_1_final = struct.pack('<q', vel_1_hex_int).encode('hex')[:8]
-	vel_1_final_hex = "\\x" +  "\\x".join(vel_1_final[i:i+2] for i in range(0, 8, 2))
 
-        chk_sum_data = crc16.crc16xmodem(repr(vel_1_final))
- 
-	#apples = ":".join("{:02x}".format(ord(c)) for c in str(motor_1_final))
+        chk_sum_data = hex(crc16.crc16xmodem(binascii.a2b_hex(vel_1_final))).strip('0x').zfill(4)
+ 		
+	# Generates the word number value and calculates the CRC
+	#cmd_word_count = "{0:0>2}".format(hex(int(math.floor(len(vel_1_final.rstrip('0'))/2))).strip( '0x' ))
+	cmd_word_count = struct.pack('h', int(math.floor(len(vel_1_final.rstrip('0'))/2))).encode('hex')[:2]
+
+	chk_sum_cmd = hex(crc16.crc16xmodem(vel_mode + binascii.a2b_hex(cmd_word_count))).strip('0x')	
 	
-	print vel_1_final
-	print hex(chk_sum_data)
-	
-	
+	motor_command_1 = binascii.b2a_hex(vel_mode) + chk_sum_cmd + vel_1_final + chk_sum_data
+
+	print "Motor 1 Command:"	
+	print motor_command_1
+
 def callbackmotor2(data):
    
 	vel_2 = motormath(data.data)
 
-	vel_2_endien = vel_2
+	if vel_2 < 0: 
+		vel_2_hex = hex((abs(vel_2) ^ 0xffffffff) +1)[2:].strip( 'L' )
+	else:
+		vel_2_hex = hex(vel_2)[2:].zfill(8)
+
+	vel_2_hex_int = int(vel_2_hex,16)
+
+	# Converts the velocity hex value into the little endien format and puts it into the
+	# proper hex format and gets the CRC value
+	vel_2_final = struct.pack('<q', vel_2_hex_int).encode('hex')[:8]
+
+        chk_sum_data = hex(crc16.crc16xmodem(binascii.a2b_hex(vel_2_final))).strip('0x').zfill(4)
+ 		
+	# Generates the word number value and calculates the CRC
+	#cmd_word_count = "{0:0>2}".format(hex(int(math.floor(len(vel_1_final.rstrip('0'))/2))).strip( '0x' ))
+	cmd_word_count = struct.pack('h', int(math.floor(len(vel_2_final.rstrip('0'))/2))).encode('hex')[:2]
+
+	chk_sum_cmd = hex(crc16.crc16xmodem(vel_mode + binascii.a2b_hex(cmd_word_count))).strip('0x')	
 	
+	motor_command_2 = binascii.b2a_hex(vel_mode) + chk_sum_cmd + vel_2_final + chk_sum_data
+	
+	print "Motor 2 Command:"
+	print motor_command_2
+
 def motor():
 
 	sub1 = rospy.Subscriber("vel_1_float", Float32, callbackmotor1)
